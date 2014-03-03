@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "compass-svg-sprites"
-  spec.version       = "0.0.2"
+  spec.version       = "0.0.3"
   spec.authors       = ["Steve Hoeksema"]
   spec.email         = ["steve@thefold.co.nz"]
   spec.summary       = %q{Convert a folder of SVGs to PNGs}
