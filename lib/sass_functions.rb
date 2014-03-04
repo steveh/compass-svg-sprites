@@ -30,7 +30,10 @@ module Sass::Script::Functions
         end
 
         image = MiniMagick::Image.open(svg_path)
-        image.format "png"
+        image.format("png") do |c|
+          c.background "transparent"
+          c.antialias
+        end
         image.write png_path
       end
     end
